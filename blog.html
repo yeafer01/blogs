@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sistema Operativo Android</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .custom-green-dark { background-color: #52796f; } 
+        .custom-green-light { background-color: #84a98c; }
+        .custom-blue-gray { background-color: #354f52; }
+        .custom-blue { background-color: #2f3e46; }
+        .custom-gray { background-color: #cad2c5; }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+
+        section {
+            margin-top: 113px;
+        }
+        section h2{
+            color: 2f3e46;
+        }
+        section h3{
+            color: #354f52;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        aside img{
+            height: 150px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+        
+        header nav a:hover {
+            text-decoration: underline;
+            color: #b4ccb9;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body class="bg-custom-blue-gray text-gray-800">
+    <header class="custom-blue-gray text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Sistema Operativo Android</h1>
+            <nav class="text-sm flex space-x-4">
+                <a href="#intro" class="hover:underline">Introducción</a>
+                <a href="#details" class="hover:underline">Detalles</a>
+                <a href="#cuadro" class="hover:underline">Cuadro comparativo</a>
+                <a href="#nosotros" class="hover:underline">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto flex">
+        <aside class="w-1/4 p-4 shadow-lg mt-28">
+            <h2 class="text-lg font-semibold custom-blue-gray text-white p-2 rounded-t">Contenido Recomendado</h2>
+            <div class="space-y-4">
+
+                <a href="https://www.doonamis.com/historia-y-evolucion-android/" target="_blank" class="block">
+                    <img src="Captura de pantalla 2024-10-23 194235.jpg" alt="" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Historia y Evolución de Android: Sus inicios y las últimas novedades</p>
+                </a>
+
+                <a href="https://www.lavanguardia.com/andro4all/android/android-permitira-instalar-aplicaciones-de-linux-en-tu-movil-o-tablet" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.38.56 PM.jpeg" alt="" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android permitirá instalar aplicaciones de Linux en tu móvil</p>
+                </a>
+
+                <a href="https://www.xataka.com/especiales/gran-plan-huawei-para-olvidarse-android-asi-esta-transformandose-empresa-china-para-volver-a-ser-gigante-global" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.42.11 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">El gran plan de Huawei para olvidarse de Android: así está transformándose la empresa china para volver a ser un gigante global</p>
+                </a>
+                <a href="https://hipertextual.com/2024/10/huawei-harmonyos-next-sistema-operativo-libre-de-android" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.52.21 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Huawei lanza HarmonyOS NEXT, su sistema operativo libre de Android</p>
+                </a>
+
+                <a href="https://blog.google/intl/es-es/productos/android-chrome-play/android-15-novedades-y-ultimas-actualizaciones/" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.53.43 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android 15: novedades y últimas actualizaciones</p>
+                </a>
+                <a href="https://unaaldia.hispasec.com/2024/10/trickmo-el-famoso-malware-ahora-puede-desbloquear-tu-android.html" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.55.10 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">TrickMo, el famoso malware ahora puede desbloquear tu Android</p>
+                </a>
+
+                <a href="https://www.lavanguardia.com/andro4all/samsung/todos-estos-moviles-samsung-ya-estan-recibiendo-la-actualizacion-android-de-octubre-de-2024" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.55.47 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Todos estos móviles Samsung ya están recibiendo la actualización Android de octubre de 2024</p>
+                </a>
+                <a href="https://www.xatakamovil.com/aplicaciones/android-auto-13-1-llega-a-tu-movil-sorpresa-como-actualizar-a-nueva-version" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 8.59.49 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android Auto 13.1 llega ya a tu móvil por sorpresa: cómo actualizar ya a la nueva versión</p>
+                </a>
+                <a href="https://www.xataka.com/basics/android-15-sus-principales-novedades-dispositivos-compatibles-como-instalarlo" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.00.56 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android 15: sus principales novedades, dispositivos compatibles y cómo instalarlo</p>
+                </a>
+                <a href="https://www.xatakamovil.com/procesadores/qualcomm-riesgo-perder-sus-procesadores-amenaza-arm-muy-seria" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.01.26 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android a punto de quedarse sin sus mejores procesadores: ARM amenaza a Qualcomm con dejarle sin los Snapdragon</p>
+                </a>
+
+                <a href="https://www.xataka.com/basics/android-15-xiaomi-que-moviles-estan-confirmados-para-actualizacion-posiblemente-hyperos-2-0" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.04.44 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android 15 en Xiaomi: qué móviles están confirmados para la actualización, posiblemente con HyperOS 2.0</p>
+                </a>
+                <a href="https://www.xataka.com/basics/que-moviles-samsung-actualizaran-a-one-ui-7-android-15" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.05.28 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Qué móviles de Samsung actualizarán a One UI 7 con Android 15</p>
+                </a>
+
+                <a href="https://www.lavanguardia.com/andro4all/ofertas/este-adaptador-te-permite-disfrutar-de-apple-carplay-o-android-auto-sin-cables-y-nunca-habia-estado-tan-barato" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.05.59 PM.jpeg" alt="Contenido Recomendado 3" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Este adaptador te permite disfrutar de Apple CarPlay o Android Auto sin cables y nunca había estado tan barato</p>
+                </a>
+                <a href="https://blog.google/intl/es-419/actualizaciones-de-producto/android-chrome-play/android-esta-reinventando-tu-telefono-con-gemini/" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.07.49 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android está reinventando tu teléfono con Gemini</p>
+                </a>
+                <a href="https://www.lavanguardia.com/andro4all/moviles/android-vs-ios-vs-harmonyos-asi-esta-la-batalla-por-ser-el-mejor-sistema-operativo-movil-del-mundo" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.31.06 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android vs iOS vs HarmonyOS: así está la batalla por ser el mejor sistema operativo móvil del mundo</p>
+                </a>
+                <a href="https://www.xatakamovil.com/sistemas-operativos/ubuntu-touch-rival-android-que-lleva-linux-a-smartphones-se-actualiza-a-grande" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.31.48 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Ubuntu Touch, el rival de Android que lleva Linux a los smartphones, se actualiza a lo grande</p>
+                </a>
+                <a href="https://es.digitaltrends.com/celular/sistemas-ios-y-android/" target="_blank" class="block">
+                    <img src="WhatsApp Image 2024-10-23 at 9.48.39 PM.jpeg" alt="Contenido Recomendado 2" class="w-full border border-gray-300 rounded">
+                    <p class="mt-2 text-center text-gray-700">Android vs. iOS: comparamos a fondo ambos sistemas operativos</p>
+                </a>
+
+                
+            </div>
+
+            <h2 class="text-lg font-semibold custom-green-dark text-white p-2 rounded-t mt-6">Referencias Bibliográficas</h2>
+            <ul class="list-inside pl-4 text-gray-700 mt-2">
+                <li>Venturi, B. -B.-B.-C. (2012). Android OS. Obtenido de Read the Docs: <a href="https://androidos.readthedocs.io/en/latest/data/introduccion/" target="_blank" class="text-blue-600 hover:underline">androidos.readthedocs.io</a></li>
+                <li class="mt-2">OpenAI. (2023). Obtenido de ChatGPT(versión de octubre): <a href="https://chatgpt.com/share/67182452-b0f8-800d-9eaa-37656c21b98f" class="text-blue-600 hover:underline"  target="_blank">chatgpt.com</a></li>
+                <li class="mt-2">Doonamis. (12 de agosto 2024). La Historia de Android: <a href="https://www.doonamis.com/historia-y-evolucion-android/#:~:text=La%20Historia%20de%20Android&text=fue%20fundada%20en%20octubre%20de,de%20un%20mercado%20en%20expansión" class="text-blue-600 hover:underline"  target="_blank">Domanis</a></li>
+                <li class="mt-2">Ibertrónica. (s/f). Android: Sistema Operativo: <a href="https://ibertronica.es/blog/tutoriales/android-sistema-operativo/" class="text-blue-600 hover:underline"  target="_blank">Ibertrónica</a></li>
+            
+
+            </ul>
+        </aside>
+
+        <section class="w-3/4 p-6 bg-white shadow-lg ml-4 text-justify" id="intro">
+            <h2 class="text-2xl font-semibold mb-4">Sistema Operativo Android</h2>
+
+            <section class="my-6" >
+                <h3 class="text-xl font-semibold mb-2">Introducción</h3>
+                <p>El objetivo del presente blog es realizar un análisis detallado del sisetma operativo Android, evaluando sus características, ventajas, y desventajas. Se busca ofrecer una visión comprensiva que permita a los usuarios comprender las diferencias clave entre Android y otros sistemas operativos, facilitando una elección informada para distintos usos tecnológicos.</p>
+            
+            </section>
+
+            <section class="my-6">
+                <h3 class="text-xl font-semibold mb-4">Breve Reseña Histórica</h3>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Fundación y Adquisición (2003-2005)</h4>
+                    <p class="mt-2 text-justify">Android Inc. fue fundada en 2003 por Andy Rubin y su equipo, inicialmente como un sistema operativo para cámaras digitales, pero luego se enfocó en teléfonos inteligentes. Google adquirió la empresa en 2005, iniciando el desarrollo de un sistema operativo de código abierto basado en Linux.</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Lanzamiento del Primer Dispositivo (2008)</h4>
+                    <p class="mt-2 text-justify">El HTC Dream (T-Mobile G1), lanzado en octubre de 2008, fue el primer dispositivo en utilizar Android, introduciendo su interfaz y ecosistema de aplicaciones.</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Versiones Iniciales (2008-2010)</h4>
+                    <p class="mt-2 text-justify">Las versiones 1.0 y 1.1 establecieron las bases del sistema. Android 1.5 Cupcake introdujo el teclado en pantalla, mientras que la versión 2.0 Eclair trajo consigo la navegación GPS, y Android 2.2 Froyo mejoró significativamente la velocidad del sistema.</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Innovaciones (2011-2013)</h4>
+                    <p class="mt-2 text-justify">Android 3.0 Honeycomb se centró en mejorar la experiencia en tablets. La versión 4.0 Ice Cream Sandwich unificó la experiencia entre dispositivos móviles y tablets, mientras que la versión 4.4 KitKat optimizó el sistema para funcionar mejor en dispositivos de gama baja.</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Mejoras Continuas (2014-2022)</h4>
+                    <p class="mt-2 text-justify">Android 5.0 Lollipop presentó el nuevo lenguaje de diseño "Material Design". Posteriormente, Android 10 introdujo el modo oscuro y mejoras en privacidad, mientras que Android 12 rediseñó la interfaz con "Material You". Android 13 se enfocó en la personalización y mejores controles de privacidad.</p>
+                </div>
+            
+                <div class="mb-4">
+                    <h4 class="font-semibold">Reciente (2023)</h4>
+                    <p class="mt-2 text-justify">Android 14 ha mejorado la duración de la batería y la seguridad, con un enfoque en inteligencia artificial y la conectividad 5G, preparando el camino para nuevas experiencias en aplicaciones y mayor eficiencia.</p>
+                </div>
+            </section>
+            
+            <section class="my-6" id="details">
+                <h3 class="text-xl font-semibold mb-2">Detalles del Sistema Operativo</h3>
+                <img src="android-malware-apps.jpg" alt="Diagrama de Android" class="w-full my-4">
+                <p class="text-sm text-gray-500">Figura No. 1. Sistema operativo Android.<br>Fuente: bepohE (2023), <a href="https://blogs.masterhacks.net/programacion/que-es-la-arquitectura-de-android/" class="text-blue-600 hover:underline">Masterhacks.net</a></p>
+                
+                <section class="my-6">
+                    <h3 class="text-xl font-semibold mb-4">Requerimientos del Sistema Operativo Android</h3>
+                
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">1. Requerimientos de Hardware</h4>
+                        <ul class="list-disc list-inside pl-6 mt-2">
+                            <li><strong>Procesador:</strong> Compatible con ARM, ARM64, x86 o x86_64.</li>
+                            <li><strong>Memoria RAM:</strong>
+                                <ul class="list-inside pl-4">
+                                    <li>Para versiones Android 10 y superiores, se recomienda un mínimo de 2 GB de RAM para un rendimiento adecuado.</li>
+                                    <li>Versiones anteriores, como Android 8 o 9, pueden funcionar con al menos 1 GB de RAM.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Almacenamiento Interno:</strong>
+                                <ul class="list-inside pl-4">
+                                    <li>Mínimo de 8 GB de almacenamiento interno, aunque los dispositivos modernos suelen tener 32 GB o más.</li>
+                                    <li>Algunas versiones más ligeras pueden funcionar con 4 GB de almacenamiento.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Pantalla:</strong> Tamaños a partir de 3.5 pulgadas en adelante.</li>
+                            <li><strong>Conectividad:</strong>
+                                <ul class="list-inside pl-4">
+                                    <li>Wi-Fi (802.11 b/g/n/ac)</li>
+                                    <li>Bluetooth (versión 4.0 o superior)</li>
+                                    <li>Soporte para redes móviles (2G, 3G, 4G, y 5G en dispositivos más recientes)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Batería:</strong> Baterías de al menos 3000 mAh.</li>
+                            <li><strong>Cámara y Sensores:</strong> Cámaras de múltiples megapíxeles y sensores como giroscopios, acelerómetros y brújulas digitales.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">2. Requerimientos de Software</h4>
+                        <ul class="list-disc list-inside pl-6 mt-2">
+                            <li><strong>Kernel de Linux:</strong> Requisito fundamental para ejecutar Android.</li>
+                            <li><strong>Soporte para aplicaciones de 32 y 64 bits:</strong> Compatibilidad con una amplia variedad de aplicaciones.</li>
+                            <li><strong>OpenGL ES o Vulkan:</strong> Soporte gráfico avanzado para renderización en 2D y 3D.</li>
+                            <li><strong>Framework de seguridad:</strong> Soporte para las últimas medidas de seguridad, incluyendo encriptado de datos y permisos de usuario.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold">3. Requerimientos Adicionales</h4>
+                        <ul class="list-disc list-inside pl-6 mt-2">
+                            <li><strong>Google Play Services:</strong> Requisito para acceder a las aplicaciones y servicios de Google.</li>
+                            <li><strong>Actualizaciones de seguridad y software:</strong> Android requiere un sistema de gestión de actualizaciones para evitar vulnerabilidades.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <h4 class="text-lg font-semibold mt-4">Comparación con otros sistemas operativos</h4>
+                <div class="overflow-x-auto" id="cuadro">
+                    <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-lg my-4">
+                        <thead>
+                            <tr class="custom-green-light text-white">
+                                <th class="border px-6 py-3">Características</th>
+                                <th class="border px-6 py-3">Android</th>
+                                <th class="border px-6 py-3">iOS</th>
+                                <th class="border px-6 py-3">Linux Fedora</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2 font-semibold">Código</td>
+                                <td class="border px-4 py-2">Abierto</td>
+                                <td class="border px-4 py-2">Cerrado</td>
+                                <td class="border px-4 py-2">Abierto</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2 font-semibold">Interfaz</td>
+                                <td class="border px-4 py-2">Personalizable y variada</td>
+                                <td class="border px-4 py-2">Uniforme y consistente</td>
+                                <td class="border px-4 py-2">Varía (GNOME, KDE)</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2 font-semibold">Actualizaciones</td>
+                                <td class="border px-4 py-2">Fragmentadas, dependen del fabricante</td>
+                                <td class="border px-4 py-2">Rápidas y constantes</td>
+                                <td class="border px-4 py-2">Regulares, pero pueden ser inestables</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2 font-semibold">Seguridad</td>
+                                <td class="border px-4 py-2">Vulnerable a malware</td>
+                                <td class="border px-4 py-2">Alto nivel de seguridad</td>
+                                <td class="border px-4 py-2">Alto nivel de seguridad, menos ataques</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2 font-semibold">Calidad de Apps</td>
+                                <td class="border px-4 py-2">Varía, muchas gratuitas</td>
+                                <td class="border px-4 py-2">Alta calidad, menos opciones</td>
+                                <td class="border px-4 py-2">Depende de la comunidad</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2 font-semibold">Facilidad de Uso</td>
+                                <td class="border px-4 py-2">Puede ser complejo para nuevos usuarios</td>
+                                <td class="border px-4 py-2">Intuitivo y fácil de usar</td>
+                                <td class="border px-4 py-2">Requiere conocimientos técnicos</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2 font-semibold">Comunidad</td>
+                                <td class="border px-4 py-2">Amplia y activa</td>
+                                <td class="border px-4 py-2">Limitada a usuarios de Apple</td>
+                                <td class="border px-4 py-2">Activa, especialmente entre desarrolladores</td>
+                            </tr>
+                            <tr>
+                                <td class="border px-4 py-2 font-semibold">Ventajas</td>
+                                <td class="border px-4 py-2">Gran personalización, más apps, acceso a hardware variado</td>
+                                <td class="border px-4 py-2">Integración con otros dispositivos, mejor soporte</td>
+                                <td class="border px-4 py-2">Control total sobre el sistema, escalabilidad</td>
+                            </tr>
+                            <tr class="bg-gray-100">
+                                <td class="border px-4 py-2 font-semibold">Desventajas</td>
+                                <td class="border px-4 py-2">Vulnerabilidades, calidad variable de apps</td>
+                                <td class="border px-4 py-2">Menor personalización, costoso</td>
+                                <td class="border px-4 py-2">Curva de aprendizaje empinada, menos soporte para juegos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-lg font-semibold mt-4">Video ilustrativo</h4>
+                <iframe class="w-full h-72 my-4" src="https://www.youtube.com/embed/_5VInBgReTY" title="La Historia de Android" allowfullscreen></iframe>
+                <p class="text-sm text-gray-500">Video No. 1. La Historia de Android 🤖 De Startup a Gigante de la Tecnología Móvil 🔝.<br>Fuente: DevExpert - Programación Android y Kotlin <a href="https://www.youtube.com/watch?v=_5VInBgReTY" class="text-blue-600 hover:underline">YouTube</a></p>
+
+                </section>
+
+            <section class="my-6 bg-gray-100 p-4 rounded-lg" id="nosotros">
+                <h4 class="text-lg font-semibold mb-2">Integrantes del Grupo</h4>
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <img src="odeth.png" alt="Integrante 1" class="rounded-full mx-auto mb-2 w-36">
+                        <p class="text-center">Odeth Arevalo</p>
+                        <p  class="mt-2">
+                            Al desarrollar este blog, pude comprender más acerca de Android, el cual e sistema operativo flexible y personalizable, con una gran comunidad y adaptabilidad a diversos dispositivos, comparando este sistema con otros como iOS y Linux, Android enfrenta problemas de seguridad y actualizaciones fragmentada, pero también destaca por su código abierto. 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="WhatsApp Image 2024-10-23 at 7.47.54 PM.jpeg" alt="" class="rounded-full w-36 mx-auto mb-2">
+                        <p class="text-center">Gerardo Vásquez</p>
+                        <p class="mt-2">
+                            Gracias a la creación de este blog comprendí mejor la evolución de Android como uno de los grandes líderes en el mercado móvil. Cabe destacar su adaptabilidad en diversos dispositivos y la comparativa entre diferentes SO que detallaban los diversos pros y contras que tiene cada software me ayudó entender cómo cada sistema impacta en la vida de los usuarios.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="fer.jpeg" alt="" class="rounded-full mx-auto w-36 mb-2">
+                        <p class="text-center">Fernando Barrios</p>
+                        <p class="mt-2">Haciendo este blog, comprendí que Android ha recorrido un largo camino desde su inicio como un sistema para cámaras digitales hasta convertirse en una plataforma móvil versátil y poderosa. Su evolución ha estado marcada por constantes innovaciones que mejoran la experiencia del usuario y la seguridad.</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    
+                    <div>
+                        <img src="WhatsApp Image 2024-10-23 at 10.04.09 PM.jpeg" alt="" class="rounded-full w-36 mx-auto mb-2">
+                        <p class="text-center">Kiuriztelys Icaza</p>
+                        <p class="mt-2">Al final, lo que comprendí es que los sistemas operativos son esenciales para que nuestros dispositivos funcionen bien. Cada uno tiene sus fortalezas y debilidades que impactan el rendimiento, la seguridad y la facilidad de uso. Algunos son más rápidos, otros más seguros, o simplemente más fáciles de usar. No hay un sistema perfecto para todos; la elección depende de lo que necesites hacer. Por eso es clave entender qué buscas y elegir el que mejor se ajuste a tus necesidades.</p>
+                    </div>
+                    <div>
+                        <img src="WhatsApp Image 2024-10-23 at 9.49.31 PM.jpeg" alt="" class="rounded-full mx-auto w-36 mb-2">
+                        <p class="text-center">Moisés Betancourt</p>
+                        <p class="mt-2">
+                            Para finalizar podemos decir que el sistema operativo Android ha evolucionado significativamente, consolidándose como uno de los sistemas más utilizados en dispositivos móviles gracias a su flexibilidad, personalización y acceso a una amplia variedad de aplicaciones. En este trabajo se han revisado sus inicios y su historia en general, requerimientos técnicos y se ha comparado con otros sistemas como iOS y Windows Phone, destacando sus características y ventajas competitivas.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <p class="mt-6">Profesor: Isaac Esquivel</p>
+                    <p class="mt-6">Institución: Universidad Tecnológica de Panamá</p>
+                    <p>Facultad: Ingeniería en Sistemas Computacionales</p>
+                    <p>Departamento: Programación de Computadoras</p>
+                    <p>Carrera: Lic. Desarrollo de Software</p>
+                    <p>Grupo #2</p>
+                </div>
+                
+            </section>
+        </section>
+
+            
+        </section>
+    </div>
+
+    <footer class="custom-green-dark text-white text-center p-4 mt-6">
+        <p>&copy; 2024 Blog Educativo: Android - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
